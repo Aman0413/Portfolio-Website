@@ -49,7 +49,20 @@ function Navbar() {
           <h1 className="head">
             I am <span className="myName">Aman</span> Verma
           </h1>
-          <p>Software Developer</p>
+          <div className="developer-skills">
+
+              <Typewriter
+              
+         options={{
+            autoStart:true,
+            loop:true,
+            delay:40,
+            strings:[
+               "Fullstack Developer",
+               "Software Developer"
+         ]
+         }}/>
+          </div>
           <span>
             <Button
               type="primary"

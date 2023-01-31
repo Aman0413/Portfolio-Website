@@ -1,6 +1,11 @@
 .container {
   width: 90%;
 }
+.developer-skills {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  
+}
 
 .HeroBanner {
   width: 100%;
@@ -104,6 +109,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
 .headBanner p {
   font-size: 1.5rem;
   letter-spacing: 0.4ch;
