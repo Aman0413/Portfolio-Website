@@ -1,0 +1,40 @@
+.Project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #d9eaff;
+
+  .main {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(245, 240, 248);
+    padding-block: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+  .container {
+    width: 100%;
+    background: rgb(245, 240, 248);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+    padding-block: 50px;
+    border-radius: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}

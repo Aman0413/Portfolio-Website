@@ -1,0 +1,47 @@
+.Eduacation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9eaff;
+  padding-bottom: 50px;
+
+  .container {
+    width: 93%;
+    background: rgb(245, 240, 248);
+    border-radius: 15px;
+    padding-bottom: 50px;
+
+    .heading {
+      padding: 30px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+
+      h2 {
+        font-weight: bold;
+      }
+    }
+
+    .box {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .box {
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+  }
+}

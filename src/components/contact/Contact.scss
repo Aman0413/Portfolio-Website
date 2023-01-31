@@ -1,0 +1,170 @@
+.Contact {
+  width: 100%;
+  text-align: center;
+  background: #d9eaff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+
+  .main {
+    padding-top: 40px;
+    width: 93%;
+    background: rgb(245, 240, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .icon-call {
+    color: black;
+    font-size: 30px;
+  }
+
+  .icon-mail {
+    color: black;
+    font-size: 40px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .container {
+    padding-block: 25px;
+    border-radius: 20px;
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(245, 240, 248);
+
+    .left-part {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .link-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .circle {
+          height: 50px;
+          width: 50px;
+          background-color: white;
+          border-radius: 50%;
+          display: inline-block;
+          border: 2px solid rgb(17, 157, 212);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .link-name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+
+    .right-part {
+      input,
+      textarea {
+        border-radius: 20px;
+        padding: 10px;
+      }
+      input,
+      textarea {
+        padding-inline: 20px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+      }
+      textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+      }
+      textarea:focus {
+        border: 3px solid rgb(17, 157, 212);
+      }
+      input[type="text"]:focus {
+        border: 3px solid rgb(17, 157, 212);
+      }
+
+      button {
+        background-color: rgb(17, 157, 212);
+        border-radius: 50px;
+        padding-inline: 40px;
+        padding-block: 15px;
+        color: white;
+        border: none;
+      }
+
+      .contact-form div {
+        display: flex;
+        gap: 20px;
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .Contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .main {
+      width: 100%;
+    }
+    .container {
+      width: 100%;
+      padding: 20px;
+      flex-direction: column-reverse;
+      gap: 50px;
+      align-items: baseline;
+
+      .left-part {
+        flex-direction: column;
+      }
+      .right-part {
+        .contact-form div {
+          flex-direction: column;
+        }
+      }
+
+      .icon-call {
+        color: black;
+        font-size: 30px;
+      }
+
+      .icon-mail {
+        color: black;
+        font-size: 30px;
+      }
+    }
+  }
+}
