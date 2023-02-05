@@ -24,12 +24,15 @@ function AboutMe() {
             </div>
             <div class="col-right card-info">
               <div class="card-info-inner">
-                <h2>About Me</h2>
-                <p>
-                  I’m a Front End Developer. I have a Passion for Creating
-                  Clean, Beautiful, Interactive, Minimalistic, Responsive and
-                  User Friendly UI, Developed by Modular, Scalable and
-                  Functional Code.
+                <h2 className="heading-about">About Me</h2>
+                <p className="desc" align="justify">
+                  As a fullstack MERN developer, I bring expertise in both
+                  front-end and back-end development to deliver comprehensive
+                  and dynamic web solutions. My skills in MongoDB, ExpressJS,
+                  ReactJS, and NodeJS have allowed me to create efficient and
+                  user-friendly websites and applications. I am passionate about
+                  using technology to solve problems and create a positive
+                  impact, and I am always eager to learn and improve my skills.
                 </p>
 
                 <div className="bio-data">
@@ -40,7 +43,7 @@ function AboutMe() {
                     <span>Phone</span>
                   </div>
                   <div className="fieldName flexItem ">
-                    <span>Aman</span>
+                    <span>Aman Verma</span>
                     <span>October 04, 2001</span>
                     <span>amanv7404@gmail.com</span>
                     <span>361236137</span>

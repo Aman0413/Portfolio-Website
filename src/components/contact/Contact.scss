@@ -1,15 +1,20 @@
 .Contact {
   width: 100%;
   text-align: center;
-  background: #d9eaff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding-top: 30px;
+  flex-direction: column;
+    background: #acbdd6;
+      box-shadow: 0 0 5px 10px #acbdd6;
+  
+
+     
 
   .main {
     padding-top: 40px;
+   
     width: 93%;
     background: rgb(245, 240, 248);
     display: flex;

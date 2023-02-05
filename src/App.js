@@ -17,7 +17,7 @@ function App() {
     Aos.init({ duration: 1500 });
   }, []);
   return (
-    <div data-aos="fade-down">
+    <div data-aos="fade-down" className="App">
       <Navbar />
       <AboutMe />
       <Project />
@@ -25,8 +25,6 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
-
-      
     </div>
   );
 }

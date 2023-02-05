@@ -1,9 +1,11 @@
 .Footer {
-  background: #d9eaff;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+    background: #acbdd6;
+      box-shadow: 0 0 5px 10px #acbdd6;
+      padding-bottom: 30px;
 
   a {
     text-decoration: none;
