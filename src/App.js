@@ -11,7 +11,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import TypeWriter from "./components/typewriter/TypeWriter";
 
 function App() {
   useEffect(() => {
@@ -20,14 +19,14 @@ function App() {
   return (
     <div data-aos="fade-down">
       <Navbar />
-      {/* <AboutMe />
+      <AboutMe />
       <Project />
       <Education />
       <Skills />
       <Contact />
-      <Footer /> */}
+      <Footer />
 
-      <TypeWriter/>
+      
     </div>
   );
 }

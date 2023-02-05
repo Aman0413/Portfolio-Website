@@ -18,19 +18,19 @@ function Navbar() {
     <div className="HeroBanner ">
       <div className="container">
         <header>
-          <nav className="navbar">
+          <nav className="navbar" id="home">
             <a href="#" className="nav-branding">
               Aman
             </a>
             <ul className="nav-menu">
               <li className="nav-item">
-                <a href="#">Home</a>
+                <a href="#home" >Home</a>
               </li>
               <li className="nav-item">
-                <a href="#">About</a>
+                <a href="#about" >About</a>
               </li>
               <li className="nav-item">
-                <a href="#">Portfolio</a>
+                <a href="#projects" >Projects</a>
               </li>
               <li className="nav-item">
                 <a href="#Contact">Contact</a>
@@ -47,7 +47,7 @@ function Navbar() {
         <div className="headBanner">
           <h2 className="head">Hi!</h2>
           <h1 className="head">
-            I am <span className="myName">Aman</span> Verma
+            I'm <span className="myName">Aman</span> Verma
           </h1>
           <div className="developer-skills">
 
@@ -56,7 +56,7 @@ function Navbar() {
          options={{
             autoStart:true,
             loop:true,
-            delay:40,
+            delay:50,
             strings:[
                "Fullstack Developer",
                "Software Developer"

@@ -10,7 +10,7 @@ function AboutMe() {
     Aos.init({ duration: 1300 });
   }, []);
   return (
-    <div className="AboutMe">
+    <div className="AboutMe" id="about">
       <div class="container" data-aos="fade-up">
         <div class="cards grid-row">
           <div class="card flex-row colmun">

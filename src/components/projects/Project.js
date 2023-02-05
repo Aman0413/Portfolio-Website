@@ -10,7 +10,7 @@ function Project() {
     Aos.init({ duration: 1200 });
   }, []);
   return (
-    <div className="Project">
+    <div className="Project" id="projects">
       <div className="main">
         <h2>Projects</h2>
 

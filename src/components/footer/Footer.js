@@ -68,7 +68,7 @@ function Footer() {
           </a>
         </div>
         <span className="copyright">
-          <p>Copyright © All rights reserved |</p>
+          <p>Copyright © {new Date().getFullYear()} All rights reserved |</p>
           <p> Made by Aman </p>
         </span>
       </div>

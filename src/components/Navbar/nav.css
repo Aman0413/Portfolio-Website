@@ -2,9 +2,11 @@
   width: 90%;
 }
 .developer-skills {
+  height: 60px;
   font-size: 1.5rem;
   letter-spacing: 5px;
-  
+  font-weight: 500;
+ 
 }
 
 .HeroBanner {
@@ -39,9 +41,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   gap: 80px;
+
 }
+
+
 .nav-branding {
   font-size: 2rem;
   font-weight: bold;
@@ -123,6 +127,7 @@ a {
   flex-direction: column;
   gap: 8px;
   margin-top: 130px;
+  
 }
 .myName {
   color: #3b5998;
