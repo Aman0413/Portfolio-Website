@@ -5,20 +5,25 @@
   align-items: center;
     background: #acbdd6;
       box-shadow: 0 0 5px 10px #acbdd6;
+    
 
   .container {
     width: 93%;
-    background: white;
+  background: rgb(229, 228, 252);
+    background: linear-gradient(38deg,
+        rgba(229, 228, 252, 1),
+        rgb(255 255 255) 51%);
     border-radius: 10px;
     padding: 15px 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+   padding-block: 50px;
   }
 
   .skill-box {
     display: flex;
-    gap: 50px;
+    gap: 30px;
   }
   .container h1 {
     text-align: center;
@@ -132,6 +137,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 20px;
+      width: 100%;
     }
     .skill-box {
       display: flex;

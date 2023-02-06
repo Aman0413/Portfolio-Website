@@ -11,8 +11,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(245, 240, 248);
-    padding-block: 20px;
+    background: rgb(229, 228, 252);
+      background: linear-gradient(38deg,
+          rgba(229, 228, 252, 1),
+          rgb(255 255 255) 51%);
+          
+    padding-block: 40px;
     border-radius: 10px;
     margin-bottom: 40px;
 
@@ -23,19 +27,29 @@
   }
   .container {
     width: 100%;
-    background: rgb(245, 240, 248);
+    
+    background: rgb(229, 228, 252);
+      background: linear-gradient(38deg,
+          rgba(229, 228, 252, 1),
+          rgb(255 255 255) 51%);
+    
     display: flex;
     justify-content: space-between;
     padding-inline: 50px;
-    padding-block: 50px;
+    padding-block: 20px;
     border-radius: 10px;
   }
   @media screen and (max-width: 767px) {
+    .main{
+      width: 100%;
+    }
     .container {
+     
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 30px;
     }
+
   }
 }

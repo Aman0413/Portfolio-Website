@@ -46,6 +46,7 @@ a {
 }
 
 
+
 .nav-branding {
   font-size: 2rem;
   font-weight: bold;
@@ -95,10 +96,13 @@ a {
     transition: 0.6s;
     gap: 20px;
   }
-  .nav-item {
+  .nav-hover {
     margin: 16px 0;
+   
   }
-  .nav-item a {
+  
+
+  .nav-hover a {
     color: white;
     font-weight: bold;
   }

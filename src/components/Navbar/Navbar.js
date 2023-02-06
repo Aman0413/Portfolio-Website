@@ -2,8 +2,7 @@ import React from "react";
 import "../Navbar/nav.css";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import { Button } from "antd";
-import Typewriter from 'typewriter-effect'
-
+import Typewriter from "typewriter-effect";
 
 function Navbar() {
   function handleClick() {
@@ -24,13 +23,13 @@ function Navbar() {
             </a>
             <ul className="nav-menu">
               <li className="nav-item">
-                <a href="#home" >Home</a>
+                <a href="#home">Home</a>
               </li>
               <li className="nav-item">
-                <a href="#about" >About</a>
+                <a href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a href="#projects" >Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li className="nav-item">
                 <a href="#Contact">Contact</a>
@@ -50,26 +49,23 @@ function Navbar() {
             I'm <span className="myName">Aman</span> Verma
           </h1>
           <div className="developer-skills">
-
-              <Typewriter
-              
-         options={{
-            autoStart:true,
-            loop:true,
-            delay:50,
-            strings:[
-               "Fullstack Developer",
-               "Software Developer"
-         ]
-         }}/>
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                strings: ["Fullstack Developer", "Software Developer"],
+              }}
+            />
           </div>
           <span>
             <Button
               type="primary"
               shape="round"
               style={{ backgroundColor: "var(--primary-color)" }}
-              size="large">
-              Vist My Work
+              size="large"
+            >
+              Download Resume
             </Button>
           </span>
         </div>

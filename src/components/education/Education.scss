@@ -9,9 +9,13 @@
 
   .container {
     width: 93%;
-    background: rgb(245, 240, 248);
+    background: rgb(229, 228, 252);
+      background: linear-gradient(38deg,
+          rgba(229, 228, 252, 1),
+          rgb(255 255 255) 51%);
     border-radius: 15px;
-    padding-bottom: 50px;
+   
+    padding-block: 40px;
 
     .heading {
       padding: 30px 30px;

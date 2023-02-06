@@ -32,7 +32,6 @@
     column-gap: 20px;
   }
   .card {
-    padding: 10px;
     background: rgb(229, 228, 252);
     background: linear-gradient(
       38deg,
@@ -42,7 +41,9 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
     margin-bottom: 20px;
-   
+    padding-inline: 30px;
+    padding-block: 30px;
+ 
    
   }
   .col-left {
@@ -87,18 +88,16 @@
   .profile-img {
     position: absolute;
     top: 0;
-    // bottom: 0;
     left: 0;
     right: 0;
    
   }
    .profile-img{
-    height: 200px;
+  
     img {
        display: block;
        width: 100%;
-      height: 300px;
-       object-fit: cover;
+       object-fit:cover;
      }
   }
 
@@ -109,6 +108,7 @@
     p {
       font-size: 14px;
     }
+     
   }
 
   @media screen and (max-width: 899px) and (min-width: 768px) {
@@ -121,11 +121,16 @@
     p {
       font-size: 12px;
     }
+    
+    
+    
   }
   @media screen and (max-width: 767px) and (min-width: 521px) {
     .grid-row {
       display: block;
     }
+        
+   
   
   }
   @media screen and (max-width: 520px) and (min-width: 200px) {
@@ -140,5 +145,6 @@
       display: block;
       margin-top: 10px;
     }
+   
   }
 }
