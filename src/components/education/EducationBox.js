@@ -20,7 +20,7 @@ function EducationBox({ course, venue, year, desc }) {
           <div className="right-part">
             <div className="course">
               <h4>{course}</h4>
-              <p>{venue}</p>
+              <p className="bold">{venue}</p>
               <p>{year}</p>
             </div>
             <div className="desc">

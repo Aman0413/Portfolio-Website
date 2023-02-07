@@ -17,7 +17,7 @@ function Education() {
         <div className="box">
           <EducationBox
             course={" Bachelor of Computer Application (BCA) "}
-            venue={"9 cgpa"}
+            venue={"9 CGPA"}
             year={"2020-23"}
             desc={
               "During the course of my study, I acquired comprehensive knowledge of computer software and hardware, programming languages, databases, web development, and other related technologies. "

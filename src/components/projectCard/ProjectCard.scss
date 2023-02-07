@@ -1,5 +1,5 @@
 .ProjectCard {
-
+ 
  
   .card {
     width: 350px;
@@ -63,9 +63,7 @@
             color: white;
         }
 
-      
-       
-      
+  
 
     }
   }
@@ -89,9 +87,11 @@
 
   .card-info {
     font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
+    line-height: 20px;
+
+    margin: 20px 0;
     font-weight: 400;
+    padding-block: 10px;
   }
 
  
@@ -101,9 +101,18 @@
       height: 350px;
     }
     .card-body {
-      padding-right: 0px;
-      padding-block: 0px;
+      width: 100%; 
+      padding-right: 10px;
+      padding-block: 10px;
+    
     
     }
+        .card-title {
+          text-transform: uppercase;
+          font-size: 40px;
+          font-weight: 500;
+    
+        }
+
   }
 }

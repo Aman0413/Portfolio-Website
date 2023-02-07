@@ -18,7 +18,7 @@ function Navbar() {
       <div className="container">
         <header>
           <nav className="navbar" id="home">
-            <a href="#" className="nav-branding">
+            <a href="#home" className="nav-branding">
               Aman
             </a>
             <ul className="nav-menu">

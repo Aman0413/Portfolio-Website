@@ -1,6 +1,6 @@
 .AboutMe {
   padding-block: 15px;
-  width: 100vw;
+  width: 100%;
   background: #acbdd6;
   box-shadow: 0 0 5px 10px #acbdd6;
  
@@ -31,6 +31,10 @@
     align-items: center;
     column-gap: 20px;
   }
+  .cards{
+    width: 100%;
+  
+  }
   .card {
     background: rgb(229, 228, 252);
     background: linear-gradient(
@@ -38,13 +42,13 @@
       rgba(229, 228, 252, 1),
       rgb(255 255 255) 51%
     );
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
     margin-bottom: 20px;
     padding-inline: 30px;
     padding-block: 30px;
- 
-   
+
   }
   .col-left {
 
@@ -133,9 +137,7 @@
     .grid-row {
       display: block;
     }
-        
-   
-  
+ 
   }
   @media screen and (max-width: 520px) and (min-width: 200px) {
     .grid-row,
@@ -149,6 +151,9 @@
       display: block;
       margin-top: 10px;
     }
-   
+
+
+  
+  
   }
 }
