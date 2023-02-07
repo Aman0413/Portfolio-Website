@@ -19,10 +19,10 @@ function ProjectCard(props) {
           <p className="card-info">{props.discription}</p>
 
           <div className="btn-box">
-            <a href={props.linklive} target="_blank">
+            <a href={props.linklive} target="_blank" rel="noopener noreferrer">
               <button className="card-btn">See Live</button>
             </a>
-            <a href={props.linkcode} target="_blank">
+            <a href={props.linkcode} target="_blank" rel="noopener noreferrer">
               <button className="card-btn">See Code</button>
             </a>
           </div>
