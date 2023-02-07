@@ -3,13 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-    background: #acbdd6;
-      box-shadow: 0 0 5px 10px #acbdd6;
+  background: #acbdd6;
+  box-shadow: 0 0 5px 10px #acbdd6;
     
 
   .container {
     width: 93%;
-  background: rgb(229, 228, 252);
+    background: rgb(229, 228, 252);
     background: linear-gradient(38deg,
         rgba(229, 228, 252, 1),
         rgb(255 255 255) 51%);
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-   padding-block: 50px;
+    padding-block: 50px;
   }
 
   .skill-box {
@@ -66,24 +66,33 @@
     background: #0077b6;
   }
 
-  .container .skill .css {
-    animation: css 2s;
-    width: 85%;
-  }
 
-  .container .skill .javascript {
+
+  .container .skill .first {
     animation: javascript 2s;
-    width: 70%;
+    width: 80%;
   }
 
-  .container .skill .php {
+  .container .skill .second{
     animation: php 2s;
     width: 85%;
   }
 
-  .container .skill .react {
+  .container .skill .third {
     animation: react 2s;
-    width: 65%;
+    width: 80%;
+  }
+  .container .skill .fourth {
+    animation: react 2s;
+    width: 80%;
+  }
+  .container .skill .fifth {
+    animation: react 2s;
+    width: 80%;
+  }
+  .container .skill .six {
+    animation: react 2s;
+    width: 95%;
   }
 
   @keyframes html {

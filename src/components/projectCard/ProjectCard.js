@@ -11,12 +11,21 @@ function ProjectCard(props) {
   return (
     <div className="ProjectCard">
       <div className="card" data-aos="fade-up">
-        <img src={props.img} className="card-img" alt="" />
+        <div className="image">
+          <img src={props.img} className="card-img" alt="" />
+        </div>
         <div className="card-body">
           <h1 className="card-title">{props.title}</h1>
           <p className="card-info">{props.discription}</p>
 
-          <button className="card-btn">See Project</button>
+          <div className="btn-box">
+            <a href={props.linklive} target="_blank">
+              <button className="card-btn">See Live</button>
+            </a>
+            <a href={props.linkcode} target="_blank">
+              <button className="card-btn">See Code</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

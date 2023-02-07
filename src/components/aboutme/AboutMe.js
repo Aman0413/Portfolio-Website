@@ -26,16 +26,20 @@ function AboutMe() {
               <div class="card-info-inner">
                 <h2 className="heading-about">About Me</h2>
                 <p className="desc" align="justify">
-                  As a fullstack MERN developer, I bring expertise in both
-                  front-end and back-end development to deliver comprehensive
-                  and dynamic web solutions. My skills in MongoDB, ExpressJS,
-                  ReactJS, and NodeJS have allowed me to create efficient and
-                  user-friendly websites and applications. I am passionate about
-                  using technology to solve problems and create a positive
-                  impact, and I am always eager to learn and improve my skills.
+                  My name is <span className="color">Aman Verma</span> and I am
+                  a full-stack MERN developer. I have a strong background in
+                  both front-end and back-end development, and have expertise in
+                  the technologies used to build modern web applications. I have
+                  a deep understanding of the MERN stack, which includes
+                  MongoDB, Express.js, React, and Node.js, and I am skilled in
+                  using these technologies to create robust, scalable, and
+                  user-friendly web applications. With my extensive experience
+                  in full-stack development and my passion for technology, I am
+                  confident that I can deliver high-quality software solutions
+                  that meet the needs of clients and users.
                 </p>
 
-                <div className="bio-data">
+                {/* <div className="bio-data">
                   <div className="fields flexItem ">
                     <span>Name</span>
                     <span>Date of Birth</span>
@@ -48,7 +52,7 @@ function AboutMe() {
                     <span>amanv7404@gmail.com</span>
                     <span>361236137</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

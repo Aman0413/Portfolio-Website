@@ -14,49 +14,49 @@ function Skills() {
         <h1>Skills</h1>
         <div className="skill-box">
           <div class="skill" data-aos="fade-right">
-            <h3>JavaScript</h3>
-            <h4>70%</h4>
+            <h3>Express.js/Node.js</h3>
+            <h4>80%</h4>
             <span class="skill-bar"></span>
-            <span class="fill-bar javascript"></span>
+            <span class="fill-bar first"></span>
           </div>
 
           <div class="skill" data-aos="fade-right">
-            <h3>CSS</h3>
+            <h3>React</h3>
             <h4>85%</h4>
             <span class="skill-bar"></span>
-            <span class="fill-bar css"></span>
+            <span class="fill-bar second"></span>
           </div>
         </div>
 
         <div className="skill-box">
           <div class="skill" data-aos="fade-right">
             <h3>JavaScript</h3>
-            <h4>70%</h4>
+            <h4>80%</h4>
             <span class="skill-bar"></span>
-            <span class="fill-bar javascript"></span>
+            <span class="fill-bar third"></span>
           </div>
 
           <div class="skill" data-aos="fade-right">
-            <h3>CSS</h3>
-            <h4>85%</h4>
+            <h3>Database</h3>
+            <h4>80%</h4>
             <span class="skill-bar"></span>
-            <span class="fill-bar css"></span>
+            <span class="fill-bar fourth"></span>
           </div>
         </div>
 
         <div className="skill-box">
           <div class="skill" data-aos="fade-right">
-            <h3>JavaScript</h3>
-            <h4>70%</h4>
+            <h3>Git/Github</h3>
+            <h4>80%</h4>
             <span class="skill-bar"></span>
-            <span class="fill-bar javascript"></span>
+            <span class="fill-bar fifth"></span>
           </div>
 
           <div class="skill" data-aos="fade-right">
-            <h3>CSS</h3>
-            <h4>85%</h4>
+            <h3>HTML/CSS</h3>
+            <h4>95%</h4>
             <span class="skill-bar"></span>
-            <span class="fill-bar css"></span>
+            <span class="fill-bar six"></span>
           </div>
         </div>
       </div>

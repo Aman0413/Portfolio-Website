@@ -44,10 +44,12 @@ function Navbar() {
         </header>
 
         <div className="headBanner">
-          <h2 className="head">Hi!</h2>
-          <h1 className="head">
-            I'm <span className="myName">Aman</span> Verma
-          </h1>
+          <div>
+            <h2 className="head">Hi!</h2>
+            <h1 className="head">
+              I'm <span className="myName">Aman</span> Verma
+            </h1>
+          </div>
           <div className="developer-skills">
             <Typewriter
               options={{

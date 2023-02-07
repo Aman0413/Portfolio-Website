@@ -4,7 +4,7 @@ import { SlGraduation } from "react-icons/sl";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-function EducationBox() {
+function EducationBox({ course, venue, year, desc }) {
   useEffect(() => {
     Aos.init({ duration: 1300 });
   }, []);
@@ -19,16 +19,12 @@ function EducationBox() {
           </div>
           <div className="right-part">
             <div className="course">
-              <h4>Bachelor in Computer Science</h4>
-              <p>Mansoura University</p>
-              <p>2014-2015</p>
+              <h4>{course}</h4>
+              <p>{venue}</p>
+              <p>{year}</p>
             </div>
             <div className="desc">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                magnam cumque velit sint cum? Dicta aut maxime ipsum repudiandae
-                officiis.
-              </p>
+              <p>{desc}</p>
             </div>
           </div>
         </div>

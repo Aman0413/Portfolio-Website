@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import ProjectCard from "../projectCard/ProjectCard";
 import "./Project.scss";
-import img from "../imgs/img-1.jpg";
+import firstProjectImg from "../../assets/Screenshot 2023-02-07 at 2.24.53 PM.png";
+import secondProjectImg from "../../assets/weather.png";
+import thirdProjectImg from "../../assets/news.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -16,25 +18,30 @@ function Project() {
 
         <div className="container">
           <ProjectCard
-            img={img}
-            title={"Project"}
+            img={firstProjectImg}
+            title={"Portfolio"}
             discription={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non laboriosam tenetur! Molestiae sapiente ut enim quibusdam asperiores nihil itaque, ex harum soluta, reiciendis illum?"
+              "Built using React, the site provides a user-friendly and interactive platform to present your work. React's ability to handle complex UI elements and dynamic updates makes it an excellent choice for creating a modern and engaging portfolio."
             }
+            linkcode={"https://github.com/Aman0413/Portfolio-Website"}
           />
           <ProjectCard
-            img={img}
-            title={"Project"}
+            img={secondProjectImg}
+            title={"Weather"}
             discription={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non laboriosam tenetur! Molestiae sapiente ut enim quibusdam asperiores nihil itaque, ex harum soluta, reiciendis illum?"
+              "A live weather site is a web application that provides real-time weather information to its users. The site is built with a combination of technologies, including a front-end framework such as React, and APIs to access current weather data from a reliable source. "
             }
+            linklive={"https://aweathersite.netlify.app/"}
+            linkcode={"https://github.com/Aman0413/Weather-Website"}
           />
           <ProjectCard
-            img={img}
-            title={"Project"}
+            img={thirdProjectImg}
+            title={"News"}
             discription={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non laboriosam tenetur! Molestiae sapiente ut enim quibusdam asperiores nihil itaque, ex harum soluta, reiciendis illum?"
+              "A news site is a web platform that provides up-to-date information and news articles on various topics to its users. The site is built with a combination of technologies, including a front-end framework such as React, and APIs. "
             }
+            linklive={"https://github.com/Aman0413/News-Website"}
+            linkcode={"https://github.com/Aman0413/News-Website"}
           />
         </div>
       </div>
