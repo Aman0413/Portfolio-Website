@@ -22,7 +22,7 @@ function Contact() {
 
               <div className="link-name">
                 <h4>Email</h4>
-                <p>aman@gmail.com</p>
+                <p>amanv7404@gmail.com</p>
               </div>
             </div>
 
@@ -37,7 +37,7 @@ function Contact() {
 
               <div className="link-name">
                 <h4>Phone</h4>
-                <p>121367326</p>
+                <p>+91-7225090867</p>
               </div>
             </div>
           </div>
@@ -53,7 +53,8 @@ function Contact() {
                 id=""
                 cols="55"
                 rows="10"
-                placeholder="Write your message"></textarea>
+                placeholder="Write your message"
+              ></textarea>
 
               <span>
                 <button>Send Message Now</button>
