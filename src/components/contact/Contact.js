@@ -26,10 +26,10 @@ function Contact() {
   function sendEmail(e) {
     e.preventDefault();
     Email.sendForm(
-      "service_5qohjcx",
-      "template_vi8j32n",
+      "service_9zy72yr",
+      "template_e6m925b",
       e.target,
-      "bAam4tLh5cF4N3EQX"
+      "ICgNoUmtcEqiETBu1"
     ).then(
       (result) => {},
       (error) => {
