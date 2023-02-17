@@ -11,19 +11,19 @@ function AboutMe() {
   }, []);
   return (
     <div className="AboutMe" id="about">
-      <div class="container" data-aos="fade-up">
-        <div class="cards grid-row">
-          <div class="card flex-row colmun">
-            <div class="col-left card-image">
-              <div class="card-bg-img">
+      <div className="container" data-aos="fade-up">
+        <div className="cards grid-row">
+          <div className="card flex-row colmun">
+            <div className="col-left card-image">
+              <div className="card-bg-img">
                 <img src={backImg} alt="card background image" />
               </div>
-              <div class="profile-img">
+              <div className="profile-img">
                 <img src={myImage} alt="profile" />
               </div>
             </div>
-            <div class="col-right card-info">
-              <div class="card-info-inner">
+            <div className="col-right card-info">
+              <div className="card-info-inner">
                 <h2 className="heading-about">About Me</h2>
                 <p className="desc" align="justify">
                   My name is <span className="color">Aman Verma</span> and I am

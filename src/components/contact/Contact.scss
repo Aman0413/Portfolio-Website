@@ -125,6 +125,14 @@
         padding-block: 15px;
         color: white;
         border: none;
+        transition: all ease-in-out 0.3s;
+
+        &:hover{
+          scale: (1);
+        }
+        &:active{
+          scale: (0.9);
+        }
       }
 
       .contact-form div {

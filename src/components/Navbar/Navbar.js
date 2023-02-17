@@ -3,6 +3,7 @@ import "../Navbar/nav.css";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import { Button } from "antd";
 import Typewriter from "typewriter-effect";
+import myResume from "../../assets/AmanResume.pdf";
 
 function Navbar() {
   function handleClick() {
@@ -61,14 +62,16 @@ function Navbar() {
             />
           </div>
           <span>
-            <Button
-              type="primary"
-              shape="round"
-              style={{ backgroundColor: "var(--primary-color)" }}
-              size="large"
-            >
-              Download Resume
-            </Button>
+            <a href={myResume}>
+              <Button
+                type="primary"
+                shape="round"
+                style={{ backgroundColor: "var(--primary-color)" }}
+                size="large"
+              >
+                Download Resume
+              </Button>
+            </a>
           </span>
         </div>
       </div>
