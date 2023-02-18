@@ -4,6 +4,7 @@ import "./Project.scss";
 import firstProjectImg from "../../assets/Screenshot 2023-02-07 at 2.24.53 PM.png";
 import secondProjectImg from "../../assets/weather.png";
 import thirdProjectImg from "../../assets/news.png";
+import fourthProjectImg from "../../assets/Screenshot 2023-02-18 at 4.03.37 PM.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -42,6 +43,15 @@ function Project() {
             }
             linklive={"https://youtu.be/vcCg4bwPIvI"}
             linkcode={"https://github.com/Aman0413/News-Website"}
+          />
+          <ProjectCard
+            img={fourthProjectImg}
+            title={"Ask ?"}
+            discription={
+              "A query based site is a web platform that provides up-to-date information to its users. The site is built with a combination of technologies, including a front-end framework such as React, and Open AI APIs. "
+            }
+            linklive={"https://youtu.be/umh1Ac5oXC4"}
+            linkcode={"https://github.com/Aman0413/Ask-me-anything"}
           />
         </div>
       </div>
