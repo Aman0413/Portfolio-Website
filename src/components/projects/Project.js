@@ -40,7 +40,7 @@ function Project() {
             discription={
               "A news site is a web platform that provides up-to-date information and news articles on various topics to its users. The site is built with a combination of technologies, including a front-end framework such as React, and APIs. "
             }
-            linklive={"https://github.com/Aman0413/News-Website"}
+            linklive={"https://youtu.be/vcCg4bwPIvI"}
             linkcode={"https://github.com/Aman0413/News-Website"}
           />
         </div>
