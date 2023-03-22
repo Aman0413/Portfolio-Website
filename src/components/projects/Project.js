@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import ProjectCard from "../projectCard/ProjectCard";
 import "./Project.scss";
-import firstProjectImg from "../../assets/Screenshot 2023-02-07 at 2.24.53 PM.png";
-import secondProjectImg from "../../assets/weather.png";
-import thirdProjectImg from "../../assets/news.png";
-import fourthProjectImg from "../../assets/Screenshot 2023-02-18 at 4.03.37 PM.png";
+import movieImg from "../../assets/movieProject.png";
+import socialMediaImg from "../../assets/socialMedia.png";
+import weatherImg from "../../assets/weatherProject.png";
+import chatGptImg from "../../assets/chatGpt.png";
+import newsImg from "../../assets/newsProject.png";
+import portfolioImg from "../../assets/portfolio.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -19,15 +21,35 @@ function Project() {
 
         <div className="container">
           <ProjectCard
-            img={firstProjectImg}
+            img={socialMediaImg}
+            title={"Social Media"}
+            discription={
+              "I have developed a full-stack social media web application using the MERN stack. This platform allows users to create an account, post updates, follow other users, and engage with their content through likes and comments. "
+            }
+            linklive={"https://social-media-client-rk7w.onrender.com/"}
+            linkcode={"https://github.com/Aman0413/Social-Media-Server"}
+          />
+          <ProjectCard
+            img={portfolioImg}
             title={"Portfolio"}
             discription={
               "Built using React, the site provides a user-friendly and interactive platform to present your work. React's ability to handle complex UI elements and dynamic updates makes it an excellent choice for creating a modern and engaging portfolio."
             }
+            linklive={"https://amanvermas.netlify.app/"}
             linkcode={"https://github.com/Aman0413/Portfolio-Website"}
           />
+
           <ProjectCard
-            img={secondProjectImg}
+            img={movieImg}
+            title={"Movie"}
+            discription={
+              "The user can enter a movie title in the search bar, and the app will display a list of matching movies, along with their posters and basic information such as release year and runtime. Application also allows users to view more detailed information about a particular movie. "
+            }
+            linklive={"https://movie-app-b7km.onrender.com/"}
+            linkcode={"https://github.com/Aman0413/Movie-Web-App"}
+          />
+          <ProjectCard
+            img={weatherImg}
             title={"Weather"}
             discription={
               "A live weather site is a web application that provides real-time weather information to its users. The site is built with a combination of technologies, including a front-end framework such as React, and APIs to access current weather data from a reliable source. "
@@ -36,7 +58,7 @@ function Project() {
             linkcode={"https://github.com/Aman0413/Weather-Website"}
           />
           <ProjectCard
-            img={thirdProjectImg}
+            img={newsImg}
             title={"News"}
             discription={
               "A news site is a web platform that provides up-to-date information and news articles on various topics to its users. The site is built with a combination of technologies, including a front-end framework such as React, and APIs. "
@@ -45,7 +67,7 @@ function Project() {
             linkcode={"https://github.com/Aman0413/News-Website"}
           />
           <ProjectCard
-            img={fourthProjectImg}
+            img={chatGptImg}
             title={"Ask ?"}
             discription={
               "A query based site is a web platform that provides up-to-date information to its users. The site is built with a combination of technologies, including a front-end framework such as React, and Open AI APIs. "

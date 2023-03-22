@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   background: #acbdd6;
-    box-shadow: 0 0 5px 10px #acbdd6;
+  box-shadow: 0 0 5px 10px #acbdd6;
 
   .main {
     width: 93%;
@@ -12,10 +12,11 @@
     align-items: center;
     flex-direction: column;
     background: rgb(229, 228, 252);
-      background: linear-gradient(38deg,
-          rgba(229, 228, 252, 1),
-          rgb(255 255 255) 51%);
-          
+    background: linear-gradient(
+      38deg,
+      rgba(229, 228, 252, 1),
+      rgb(255 255 255) 51%
+    );
     padding-block: 40px;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -27,30 +28,31 @@
   }
   .container {
     width: 100%;
-    
+
     background: rgb(229, 228, 252);
-      background: linear-gradient(38deg,
-          rgba(229, 228, 252, 1),
-          rgb(255 255 255) 51%);
-    
+    background: linear-gradient(
+      38deg,
+      rgba(229, 228, 252, 1),
+      rgb(255 255 255) 51%
+    );
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     padding-inline: 50px;
     padding-block: 20px;
     border-radius: 10px;
   }
   @media screen and (max-width: 767px) {
-    .main{
+    .main {
       width: 100%;
     }
     .container {
-     
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 30px;
     }
-
   }
-  
 }

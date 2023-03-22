@@ -1,6 +1,4 @@
 .ProjectCard {
- 
- 
   .card {
     width: 350px;
     height: 380px;
@@ -9,13 +7,13 @@
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-    .image{
+    .image {
       width: 100%;
       height: 100%;
-     
+
       background-size: contain;
 
-      img{
+      img {
         width: 100%;
       }
     }
@@ -40,26 +38,25 @@
     color: #fff;
     padding-inline: 20px;
     padding-block: 20px;
-    
+
     transition: 0.7s;
 
-    .btn-box{
+    .btn-box {
       display: flex;
       justify-content: space-around;
 
       .card-btn {
-          padding: 10px 15px;
-          width: 125px;
-          border-radius: 5px;
-          text-transform: capitalize;
-          border: none;
-          outline: none;
-          font-weight: 500;
-          cursor: pointer;
-          background-color: var(--primary-color);
-            color: white;
-        }
-
+        padding: 10px 15px;
+        width: 125px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: var(--primary-color);
+        color: white;
+      }
     }
   }
 
@@ -69,9 +66,8 @@
 
   .card-title {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
-    
   }
 
   .card-sub-title {
@@ -89,58 +85,45 @@
     padding-block: 10px;
   }
 
-    
   @media screen and (width > 900px) and (width < 1300px) {
     .card {
-        width: 250px;
-        height: 290px;
+      width: 250px;
+      height: 290px;
 
-        .card-body{
-         padding-inline: 8px;
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-          
+      .card-body {
+        padding-inline: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
 
-          .btn-box{
-
-            .card-btn {
-               
-                width: 100px;
-                border-radius: 5px;
-                padding-inline: 10px;
-                font-size: 1rem;
-                
-              }
+        .btn-box {
+          .card-btn {
+            width: 100px;
+            border-radius: 5px;
+            padding-inline: 10px;
+            font-size: 1rem;
           }
         }
       }
-         .card-title {
-          
-           font-size: 30px;
-           font-weight: 500;
-    
-         }
-    
-         .card-sub-title {
-           
-           font-size: 12px;
-         
-         }
-    
-         .card-info {
-           font-size: 13px;
-           line-height: 20px;
-    
-          padding: 0;
-          margin: 0;
-           font-weight: 400;
-          
-         }
+    }
+    .card-title {
+      font-size: 30px;
+      font-weight: 500;
+    }
 
-  
+    .card-sub-title {
+      font-size: 12px;
+    }
+
+    .card-info {
+      font-size: 13px;
+      line-height: 20px;
+
+      padding: 0;
+      margin: 0;
+      font-weight: 400;
+    }
   }
-  
 
   @media screen and (width <= 767px) {
     .card {
@@ -148,22 +131,14 @@
       height: 350px;
     }
     .card-body {
-      width: 100%; 
+      width: 100%;
       padding-right: 10px;
       padding-block: 10px;
-    
-    
     }
-        .card-title {
-          text-transform: uppercase;
-          font-size: 40px;
-          font-weight: 500;
-    
-        }
-
+    .card-title {
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 500;
+    }
   }
-   
-
-  
-      
 }
