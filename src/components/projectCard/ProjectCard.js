@@ -8,6 +8,7 @@ function ProjectCard(props) {
   useEffect(() => {
     Aos.init({ duration: 1300 });
   }, []);
+
   return (
     <div className="ProjectCard">
       <div className="card" data-aos="fade-up">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Navbar/nav.css";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import { Button } from "antd";

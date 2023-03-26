@@ -1,0 +1,76 @@
+.Admin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .logo {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          font-size: 15px;
+        }
+
+        .logout:hover {
+          transform: scale(1);
+          border: none;
+        }
+        .logout:active {
+          transform: scale(0.9);
+          border: none;
+        }
+      }
+    }
+
+    h1 {
+      padding-block: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .panel {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      .box {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #acbdd6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color: var(--primary-color);
+        font-size: large;
+        font-weight: 600;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          transform: scale(1);
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
