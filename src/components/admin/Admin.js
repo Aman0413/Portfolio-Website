@@ -1,7 +1,7 @@
 import "./Admin.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { FiLogOut } from "react-icons/fi";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { adminLogin } from "../redux/slices/adminSlice";
 
 function Admin() {
@@ -17,6 +17,14 @@ function Admin() {
     <div className="Admin">
       <div className="container">
         <div className="head">
+          <button
+            className="login"
+            onClick={() => {
+              navigate("/admin/login");
+            }}
+          >
+            Login
+          </button>
           <h1>Admin Panel</h1>
           <div className="logo">
             <button className="logout" onClick={logout}>

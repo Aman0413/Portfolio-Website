@@ -18,6 +18,14 @@
       align-items: center;
       justify-content: space-around;
 
+      .login {
+        background-color: #acbdd6;
+        width: 100px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        color: var(--primary-color);
+      }
       .logo {
         font-size: 30px;
         display: flex;

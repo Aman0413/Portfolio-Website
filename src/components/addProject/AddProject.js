@@ -3,14 +3,20 @@ import axiosClient from "../../axiosClient/axiosClient";
 import "./AddProject.scss";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
 
 function AddProject() {
+  const sucess = (statusCode) => {
+    toast.success("Sucess");
+  };
+  const error = (statusCode) => {
+    toast.error("Error!");
+  };
   const [image, setImage] = useState();
   const [projectName, setProjectName] = useState();
   const [projectDesc, setProjectDesc] = useState();
   const [live, setLive] = useState();
   const [code, setCode] = useState();
-  const [data, setData] = useState();
   const navigate = useNavigate();
 
   const adminState = useSelector((state) => state.admin);
@@ -36,6 +42,12 @@ function AddProject() {
         code,
         image,
       });
+
+      if (res.data.status === "ok" && res.data.statusCode === 201) {
+        sucess();
+      } else {
+        error();
+      }
     } else {
       navigate("/");
     }
@@ -123,6 +135,7 @@ function AddProject() {
             </div>
           </div>
         </form>
+        <Toaster position="top-center" reverseOrder={false} />
       </div>
     </div>
   );
