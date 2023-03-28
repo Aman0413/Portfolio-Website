@@ -3,6 +3,7 @@ import axiosClient from "../../axiosClient/axiosClient";
 import "./UpdateProject.scss";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
 
 function UpdateProject() {
   const [image, setImage] = useState();
@@ -10,30 +11,43 @@ function UpdateProject() {
   const [projectDesc, setProjectDesc] = useState();
   const [live, setLive] = useState();
   const [code, setCode] = useState();
-  const [data, setData] = useState();
   const [id, setId] = useState();
   const navigate = useNavigate();
   const adminState = useSelector((state) => state.admin);
+  const sucess = (msg) => {
+    toast.success(msg);
+  };
+  const error = (msg) => {
+    toast.error(msg);
+  };
 
   async function updateProject(e) {
     e.preventDefault();
+    try {
+      if (adminState.data) {
+        const res = await axiosClient.put("/project", {
+          id,
+          image,
+          projectName,
+          projectDesc,
+          live,
+          code,
+        });
 
-    if (adminState.data) {
-      const res = axiosClient.put("/project", {
-        id,
-        image,
-        projectName,
-        projectDesc,
-        live,
-        code,
-      });
-    } else {
-      navigate("/");
+        if (res.data.status === "ok") {
+          sucess(res.data.result);
+        } else {
+          error(res.data.message);
+        }
+      } else {
+        error("Unauthorized Access");
+        setTimeout(() => {
+          navigate("/");
+        }, 2000);
+      }
+    } catch (err) {
+      error(err.message);
     }
-  }
-
-  if (data) {
-    console.log(data);
   }
 
   function handleImageChange(e) {
@@ -43,15 +57,15 @@ function UpdateProject() {
     fileReader.onload = () => {
       if (fileReader.readyState === fileReader.DONE) {
         setImage(fileReader.result);
-        console.log("img data", fileReader.result);
       }
     };
   }
   return (
     <div className="UpdateProject">
+      <Toaster position="top-center" reverseOrder={false} />
       <div className="container">
         <form onSubmit={updateProject}>
-          <div class="py-20 h-screen px-2">
+          <div class="py-20 h-screen px-2 mainfirst">
             <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-lg">
               <div class="md:flex">
                 <div class="w-full px-4 py-4 ">
@@ -126,7 +140,6 @@ function UpdateProject() {
                         class="h-full w-full opacity-0"
                         name=""
                         onChange={handleImageChange}
-                        required="true"
                       />
                     </div>
                   </div>

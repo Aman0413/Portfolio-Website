@@ -3,25 +3,44 @@ import axiosClient from "../../axiosClient/axiosClient";
 import "./DeleteProject.scss";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
 
 function DeleteProject() {
+  const success = (msg) => {
+    toast.success(msg);
+  };
+  const error = (msg) => {
+    toast.error(msg);
+  };
   const [id, setId] = useState("");
-  const [data, setData] = useState();
   const adminState = useSelector((state) => state.admin);
   const navigate = useNavigate();
 
   async function deleteProject(e) {
     e.preventDefault();
-    if (adminState.data) {
-      const res = await axiosClient.post("/project/delete", {
-        id,
-      });
-    } else {
-      navigate("/");
+    try {
+      if (adminState.data) {
+        const res = await axiosClient.post("/project/delete", {
+          id,
+        });
+        if (res.data.status === "ok") {
+          success(res.data.result);
+        } else {
+          error(res.data.message);
+        }
+      } else {
+        error("Unauthorized Access");
+        setTimeout(() => {
+          navigate("/");
+        }, 2000);
+      }
+    } catch (err) {
+      error(err.message);
     }
   }
   return (
     <div className="DeleteProject">
+      <Toaster position="top-center" reverseOrder={false} />
       <div className="container">
         <form onSubmit={deleteProject}>
           <div class="py-20 h-screen px-2">

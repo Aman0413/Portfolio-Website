@@ -6,12 +6,13 @@ import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 
 function AddProject() {
-  const sucess = (statusCode) => {
-    toast.success("Sucess");
+  const sucess = (msg) => {
+    toast.success(msg);
   };
-  const error = (statusCode) => {
-    toast.error("Error!");
+  const error = (msg) => {
+    toast.error(msg);
   };
+
   const [image, setImage] = useState();
   const [projectName, setProjectName] = useState();
   const [projectDesc, setProjectDesc] = useState();
@@ -28,7 +29,6 @@ function AddProject() {
     fileReader.onload = () => {
       if (fileReader.readyState === fileReader.DONE) {
         setImage(fileReader.result);
-        console.log("img data", fileReader.result);
       }
     };
   }
@@ -42,14 +42,16 @@ function AddProject() {
         code,
         image,
       });
-
       if (res.data.status === "ok" && res.data.statusCode === 201) {
-        sucess();
+        sucess("Saved");
       } else {
-        error();
+        error("Error occured not saved");
       }
     } else {
-      navigate("/");
+      error("Unauthorized Access");
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
     }
   }
 

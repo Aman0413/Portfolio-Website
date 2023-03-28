@@ -43,9 +43,6 @@ function Admin() {
           <Link to={"project/update/"}>
             <div className="box">Update Project</div>
           </Link>
-          <Link to={"project/delete/"}>
-            <div className="box">Delete Project</div>
-          </Link>
         </div>
       </div>
     </div>
