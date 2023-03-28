@@ -3,7 +3,7 @@ import "../Navbar/nav.css";
 // import { RxHamburgerMenu } from "react-icons/rx";
 import { Button } from "antd";
 import Typewriter from "typewriter-effect";
-import myResume from "../../assets/AmanResume.pdf";
+import myResume from "../../assets/Aman's Resume.pdf";
 
 function Navbar() {
   function handleClick() {
